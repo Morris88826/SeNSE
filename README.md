@@ -37,4 +37,16 @@ Download all the data and put them in the same folder. For example:
       - s02
     - cohort2
 
-## Preprocessing
+### Run
+Run the main script to collect the folder datas and combine with the glucose and summary files.
+
+```
+python main.py -c {cohort_id} -s {subject_id}
+```
+
+### Tasks
+
+We also provides other scripts for further processing the data
+
+- [x] Beat Extraction
+- [x] Extract a 10s ECG window from the raw signal
