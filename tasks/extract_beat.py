@@ -58,7 +58,7 @@ def process_cgm_segment(cgm_df, _cgm_idx, fs=250):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('-s', '--subject_id', type=str, help='subject id')
+    parser.add_argument('-s', '--subject_id', type=str, help='subject id') # ex: c1s01
     parser.add_argument('--regenerate', action='store_true', help='regenerate the beat file')
     parser.add_argument('--out_folder', default="/mnt/data2/mtseng/dataset/SeNSE/TCH_processed", type=str, help='path to folder containing the combined ECG, summary, and glucose file')
     args = parser.parse_args()
